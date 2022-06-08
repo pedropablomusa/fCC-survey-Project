@@ -1,0 +1,10 @@
+body, #title, #description, #name-label, #email-label, #number-label {
+    text-align: center;
+}
+
+#survey-form {
+    background: rgb(0, 75, 125);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+  }
+  

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+<!--Name-->
+  <form id="survey-form">
+    <label id="name-label"> Name
+    <input required type="text" id="name" placeholder="Enter your name">
+    </label><br>
+
+<!--Email-->
+    <label id="email-label"> Email
+    <input required type="email" id="email" placeholder="Enter your Email">
+    </label><br>
+
+<!--Age-->
+    <label id="number-label"> Age
+    <input type="number" min="1" max="100" id="number" placeholder="Age">
+    </label><br>
+
+<!--Dropdown-->
+    <p>Here's a dropdown element:</p>
+    <select id="dropdown">
+      <option disabled selected value="">Select something</option>
+      <option value="challenges">challenges</option>
+      <option value="projects">projects</option>
+      <option value="community">community</option>
+    </select>
+
+<!--Radio buttons-->
+    <div class="form-group">
+      <p>Would you recommend freeCodeCamp to a friend?</p>
+      <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked>
+        Definitely
+      </label><br>
+
+      <label>
+        <input name="user-recommend" value="maybe" type="radio" class="input-radio">
+        Maybe
+      </label><br>
+
+      <label><input name="user-recommend" value="not-sure"
+          type="radio" class="input-radio">
+          Not sure
+      </label><br>
+    </div>
+
+<!--Checkboxes-->
+    <div class="form-group">
+      <p>Check these checkboxes out! <span class="clue">(Check a few if you'd like!)</span></p>
+     <label>
+        <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox"/>
+        Front-end Projects
+      </label><br>
+      <label>
+        <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox"/>
+        Back-end Projects
+      </label><br>
+      <label>
+        <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox"/>
+        Data Visualization
+      </label><br>
+      <label>
+        <input name="prefer" value="challenges" type="checkbox" class="input-checkbox"/>
+        Challenges
+      </label><br>
+      <label>
+        <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox"/>
+        Open Source Community
+      </label><br>
+    </div>
+
+<!--Text Area-->
+    <div class="form-group">
+      <p>Here's a Text Box! Type Something in!</p>
+      <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+    </div>
+
+<!--Submit Button-->
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+    </div>
+
+  </form>
+</body>
+</html>
+
